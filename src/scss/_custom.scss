@@ -6,3 +6,15 @@
   height: 60px;
   width: 60px;
 }
+
+.banner {
+  min-height: calc(100vh - 60px);
+
+  .banner-img {
+    left: 45%;
+    min-height: 100%;
+    min-width: 100vw;
+    top: 10%;
+    transform: translate(-45%, -10%);
+  }
+}
