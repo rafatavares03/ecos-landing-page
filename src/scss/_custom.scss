@@ -1,3 +1,8 @@
+.font-ultra {
+  font-size: calc(3rem + 1.5vw);
+}
+
+
 .header-height {
   height: 60px;
 }
@@ -7,8 +12,12 @@
   width: 60px;
 }
 
-.banner {
+.banner-height {
   min-height: calc(100vh - 60px);
+}
+
+.banner {
+  @extend .banner-height;
 
   .banner-img {
     left: 45%;
@@ -16,5 +25,9 @@
     min-width: 100vw;
     top: 10%;
     transform: translate(-45%, -10%);
+  }
+
+  .button-sizing {
+    max-width: 150px;
   }
 }
