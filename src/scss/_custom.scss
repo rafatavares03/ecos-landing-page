@@ -3,17 +3,33 @@
 }
 
 
+body {
+  position: relative;
+}
+
 .header-height {
-  height: 60px;
+  height: 3.5rem;
+
+  .nav-link {
+    border-bottom: solid 3px #000;
+
+    &:hover {
+      border-bottom: solid 3px #ffc107;
+    }
+  }
+
+  .active {
+    border-bottom: solid 3px #ffc107;
+  }
 }
 
 .menu-button {
-  height: 60px;
-  width: 60px;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .banner-height {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 3.5rem);
 }
 
 .banner {

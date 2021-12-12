@@ -7,27 +7,27 @@
   <link rel="stylesheet" href="style.css"/>
   <title>ECOS - Estúdio de fotografia</title>
 </head>
-<body>
-  <header class="bg-black header-height">
-    <div class="align-items-center container d-flex h-100 justify-content-between">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" id="home">
+  <header class="bg-black header-height sticky-top">
+    <div class="align-items-center container d-flex h-100 justify-content-between" id="navbar-example">
       <h1 class="m-0 text-warning">ECOS</h1>
       <img src="./images/menu.png" alt="Menu" class="d-block d-lg-none mh-100 mw-100" data-bs-toggle="modal" data-bs-target="#mobileMenu"/>
       <nav class="nav d-none d-lg-flex">
-        <a class="fs-5 nav-link text-warning" href="">Início</a>
-        <a class="fs-5 nav-link text-warning" href="">Sobre</a>
-        <a class="fs-5 nav-link text-warning" href="">Ensaios</a>
-        <a class="fs-5 nav-link text-warning" href="">Equipe</a>
-        <a class="fs-5 nav-link text-warning" href="">Contato</a>
+        <a class="fs-5 nav-link text-warning" href="#home">Início</a>
+        <a class="fs-5 nav-link text-warning" href="#about">Sobre</a>
+        <a class="fs-5 nav-link text-warning" href="#photoshoots">Ensaios</a>
+        <a class="fs-5 nav-link text-warning" href="#team">Equipe</a>
+        <a class="fs-5 nav-link text-warning" href="#contact">Contato</a>
       </nav>
     </div>
   </header>
   <section class="modal" id="mobileMenu">
     <div class="align-items-center d-flex m-0 modal-dialog h-100 p-3">
-      <div class="bg-warning h-75 modal-content my-auto">
+      <div class="bg-warning h-100 modal-content my-auto">
         <div class="border-0 modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="align-items-center d-flex flex-column modal-body mt-4">
+        <div class="align-items-center d-flex flex-column justify-content-center modal-body py-2">
           <a class="fs-5 fw-bold nav-link text-black" href="">Início</a>
           <a class="fs-5 fw-bold nav-link text-black" href="">Sobre</a>
           <a class="fs-5 fw-bold nav-link text-black" href="">Ensaios</a>
@@ -47,6 +47,10 @@
       </div>
     </div>
   </section>
+  <section class="min-vh-100" id="about"></section>
+  <section class="min-vh-100" id="photoshoots"></section>
+  <section class="min-vh-100" id="team"></section>
+  <section class="min-vh-100" id="contact"></section>
   <script src="bundle.js"></script>
 </body>
 </html>
