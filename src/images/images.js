@@ -1,4 +1,10 @@
 import './about-img1.jpg';
 import './about-img2.jpg'
 import './banner-bg.jpg';
+import './marriage1.jpg';
+import './marriage2.jpg';
+import './party1.jpg';
+import './party2.jpg';
+import './studio1.jpg';
+import './studio2.jpg';
 import './menu.png';

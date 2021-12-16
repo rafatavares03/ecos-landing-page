@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css"/>
   <title>ECOS - Estúdio de fotografia</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-example" id="home">
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target="#navbar-example" id="home">
   <header class="bg-black header-height sticky-top">
     <div class="align-items-center container d-flex h-100 justify-content-between" id="navbar-example">
       <h1 class="m-0 text-warning">ECOS</h1>
@@ -16,7 +16,6 @@
         <a class="fs-5 nav-link text-warning" href="#home">Início</a>
         <a class="fs-5 nav-link text-warning" href="#about">Sobre</a>
         <a class="fs-5 nav-link text-warning" href="#photoshoots">Ensaios</a>
-        <a class="fs-5 nav-link text-warning" href="#team">Equipe</a>
         <a class="fs-5 nav-link text-warning" href="#contact">Contato</a>
       </nav>
     </div>
@@ -31,7 +30,6 @@
           <a class="fs-5 fw-bold nav-link text-black" href="#home">Início</a>
           <a class="fs-5 fw-bold nav-link text-black" href="#about">Sobre</a>
           <a class="fs-5 fw-bold nav-link text-black" href="#photoshoots">Ensaios</a>
-          <a class="fs-5 fw-bold nav-link text-black" href="#team">Equipe</a>
           <a class="fs-5 fw-bold nav-link text-black" href="#contact">Contato</a>
         </div>
       </div>
@@ -47,12 +45,12 @@
       </div>
     </div>
   </section>
-  <section class="bg-dark py-5" id="about">
+  <section class="py-5" id="about">
     <div class="container d-lg-flex flex-column text-center text-lg-start">
       <div class="align-items-center d-flex flex-column justify-content-center mb-5">
         <h1 class="fs-1 mb-4 text-warning">Sobre nós</h1>
         <div class="align-items-center d-flex d-lg-block flex-column-reverse">
-          <img class="about-img float-lg-end ms-lg-4" src="./images/about-img1.jpg" alt="Fotógrafo em uma aurora boreal">
+          <img class="about-img float-lg-end ms-lg-4" src="./images/about-img1.jpg" alt="Fotógrafo em uma aurora boreal" loading="lazy"/>
           <p class="fs-5 fw-light text-white-50">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Aliquam suscipit dui at ipsum iaculis, eu consequat lacus posuere. 
@@ -72,7 +70,7 @@
       <div class="align-items-center d-flex flex-column justify-content-center">
         <h1 class="fs-1 mb-4 text-warning">Porque a ECOS?</h1>
         <div class="align-items-center d-flex d-lg-block flex-column-reverse">
-          <img class="about-img float-lg-start me-lg-4" src="./images/about-img2.jpg" alt="Fotógrafos no pôr do sol">
+          <img class="about-img float-lg-start me-lg-4" src="./images/about-img2.jpg" alt="Fotógrafos no pôr do sol" loading="lazy"/>
           <p class="fs-5 fw-light text-white-50">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Aliquam suscipit dui at ipsum iaculis, eu consequat lacus posuere. 
@@ -91,8 +89,54 @@
       </div>
     </div>
   </section>
-  <section class="min-vh-100" id="photoshoots"></section>
-  <section class="min-vh-100" id="team"></section>
+  <section class="py-3" id="photoshoots">
+    <div class="container">
+      <div id="carouselPhotoshoot" class="carousel slide w-sm-75" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselPhotoshoot" data-bs-slide-to="0" class="active" aria-current="true" arial-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselPhotoshoot" data-bs-slide-to="1" arial-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselPhotoshoot" data-bs-slide-to="2" arial-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carousel-size">
+          <div class="active carousel-item">
+            <picture class="d-block">
+              <source class="h-100" srcset="./images/party1.jpg" media="(max-width: 450px)" alt="Festas e Eventos"/>
+              <img class="w-100" src="./images/party2.jpg" alt="Festas e Eventos"/>
+            </picture>
+            <div class="carousel-caption">
+              <h5>Festas e Eventos</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture class="d-block">
+              <source class="h-100" srcset="./images/marriage1.jpg" media="(max-width: 450px)" alt="Casamentos"/>
+              <img class="w-100" src="./images/marriage2.jpg" alt="Casamentos"/>
+            </picture>
+            <div class="carousel-caption">
+              <h5>Casamentos</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture class="d-block">
+              <source class="h-100" srcset="./images/studio1.jpg" media="(max-width: 450px)" alt="Fotos em estúdio"/>
+              <img class="w-100" src="./images/studio2.jpg" alt="Fotos em estúdio">
+            </picture>
+            <div class="carousel-caption">
+              <h5>Fotos em estúdio</h5>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotoshoot" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotoshoot" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="min-vh-100" id="contact"></section>
   <script src="bundle.js"></script>
 </body>
