@@ -1,6 +1,15 @@
 import './about-img1.jpg';
 import './about-img2.jpg'
 import './banner-bg.jpg';
+import './galery1.jpg';
+import './galery2.jpg';
+import './galery3.jpg';
+import './galery4.jpg';
+import './galery5.jpg';
+import './galery6.jpg';
+import './galery7.jpg';
+import './galery8.jpg';
+import './galery9.jpg';
 import './marriage1.jpg';
 import './marriage2.jpg';
 import './party1.jpg';
