@@ -183,7 +183,23 @@
       </div>
     </div>
   </section>
-  <section class="min-vh-100" id="contact"></section>
+  <section class="container py-5 text-center" id="contact">
+    <h1 class="mb-5 text-warning">Entre em contato</h1>
+    <form>
+      <div class="form-floating mb-3 text-warning">
+        <input type="text" name="name" id="name" class="bg-black border-0 form-control" placeholder="name"/>
+        <label for="name">Nome</label>
+      </div>
+      <div class="form-floating mb-3 text-warning">
+        <input type="email" name="email" id="email" class="bg-black border-0 form-control" placeholder="email"/>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mb-3 text-warning">
+        <textarea name="message" id="message" class="bg-black border-0 form-control" placeholder="message"></textarea>
+        <label for="message">Escreva sua mensagem...</label>
+      </div>
+    </form>
+  </section>
   <script src="bundle.js"></script>
 </body>
 </html>
