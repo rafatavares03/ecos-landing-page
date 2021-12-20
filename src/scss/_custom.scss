@@ -1,3 +1,21 @@
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
 .font-ultra {
   font-size: calc(3rem + 1.5vw);
 }
@@ -58,4 +76,9 @@ body {
   width: 100%;
   min-width: 100px;
   max-width: 400px;
+}
+
+.contact-message {
+  height: 200px !important;
+  resize: none;
 }
